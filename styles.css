@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    width: 90%; /* Ocupa 90% da largura da tela em telas menores */
+    max-width: 500px; /* Limita a largura em telas maiores */
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 120px; /* Aumenta o tamanho da logo */
+    height: 120px; /* Mantém a altura igual à largura */
+    margin-bottom: 1.5rem;
+    border-radius: 50%; /* Bordas arredondadas */
+    object-fit: contain; /* Ajusta a imagem ao espaço da logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #808080;
+    margin-bottom: 1.5rem;
+}
+
+.links button {
+    width: 100%; /* Botões ocupam toda a largura do container */
+    max-width: 450px; /* Limita a largura dos botões em telas maiores */
+    padding: 1.2rem;
+    margin: 0.7rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.links button:hover {
+    background-color: #c0c0c0;
+    transform: scale(1.05);
+}
+
+.links button:active {
+    transform: scale(1);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .links button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica na frente */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Centraliza verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    max-width: 500px; /* Largura máxima do modal */
+    border-radius: 16px; /* Bordas arredondadas */
+}
+
+.close {
+    color: #aaa;
+    float: right; /* Alinha à direita */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer; /* Muda o cursor para pointer */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Altera a cor ao passar o mouse */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Muda o cursor para pointer */
+}
+
+.contact {
+    margin-bottom: 1rem; /* Espaçamento entre os contatos */
+}
+
+
+p {
+    color: #000; /* Define a cor do texto como preto */
+}

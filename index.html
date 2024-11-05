@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK HUB - 360 | Links</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo300.jpg" alt="Logo OK HUB - 360" class="logo">
+            <h1>OK HUB - 360</h1>
+            <p>Assistência e Loja Especializada</p>
+        </header>
+        <div class="links">
+            <button onclick="openModal()">Contato</button>
+            <button onclick="openLink('https://okcomputer.com.br')">Site da Loja</button>
+            <button onclick="openLink('https://maps.app.goo.gl/TJUTqL3LM6meZ1XE6')">Localização</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contatos de WhatsApp</h2>
+            <div class="contact">
+                <p>Contato Leandro: <strong><a href="https://w.app/xbVUpv">Clique aqui</a></strong></p>
+                <p>Texto para copiar: <code>+51980367973</code></p>
+            </div>
+            <div class="contact">
+                <p>Contato Vendas: <strong><a href="https://w.app/obGUIO">Clique aqui</a></strong></p>
+                <p>Texto para copiar: <code>+5196095755</code></p>
+            </div>
+            <div class="contact">
+                <p>Contato Suporte Téncnico: <strong><a href="https://w.app/6NCPrJ">Clique aqui</a></strong></p>
+                <p>Texto para copiar: <code>+519669-3316</code></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+     <!-- Modal de Localização -->
+     <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLocationModal()">&times;</span>
+            <h2>Localização</h2>
+            <p>Nome: <strong id="locationName">Nome da Localização</strong></p>
+            <p>Link: <strong id="locationLink">https://link-da-localizacao.com</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Feito Pelo Gustavo Ert :)-->
